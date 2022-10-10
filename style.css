@@ -1,0 +1,121 @@
+*,
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #00b8b8;
+}
+nav{
+  display: flex;
+  width: 84%;
+  margin: auto;
+  padding: 20px 0;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo{
+  width: 100px;
+  cursor: pointer;
+}
+nav ul li  {
+  display: inline-block;
+  list-style: none;
+  margin: 10px 20px;
+}
+nav ul li a{
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+nav ul li a:hover{
+  color: red;
+}
+
+.welcome {
+  font-size: 28px;
+  font-weight: 800;
+  letter-spacing: 4px;
+  text-align: center;
+}
+
+.cta {
+  display: flex;
+  justify-content: center;
+}
+
+model-viewer {
+  overflow-x: hidden;
+  width: 500px;
+  height: 500px;
+}
+
+.newBox {
+  display: none;
+}
+
+
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  width: 250px;
+  height: 200px;
+  margin: 8px;
+  border-radius: 20px;
+  background-color: rgb(17, 13, 13);
+  position: relative;
+  box-shadow: 4px 4px 8px 4px rgba(0, 0, 0, 0.2);
+}
+
+.product {
+  position: absolute;
+  top: 0;
+  left: 50px;
+  z-index: 9;
+  cursor: pointer;
+  transition: 1s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+}
+
+.product:hover {
+  transform: rotate3d(1, 1, 10, 360deg) scale(125%);
+  transition-delay: .25s;
+}
+
+.product img {
+  width: 150px;
+  height: 150px;
+}
+
+.detail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  background-color: #f7f7f7;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  border-radius: 0 0 20px 20px;
+}
+
+.title {
+  font-size: 18px;
+  font-weight: 800;
+  letter-spacing: 4px;
+}
+
+.description {
+  font-size: 12px;
+  font-weight: 600;
+}
